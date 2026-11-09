@@ -1,0 +1,11 @@
+<h3>Top Heroes</h3>
+<div class="grid grid-pad">
+@for(heroe of heroes;track heroe.id){
+  <a class="col-1-4" routerLink="/detalle/{{heroe.id}}"
+  >
+    <div class="module heroe">
+      <h4>{{heroe.nombre}}</h4>
+    </div>
+  </a>
+}
+</div>
